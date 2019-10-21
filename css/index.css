@@ -152,7 +152,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 3px solid black;
 }
 html {
   font-size: 62.5%;
@@ -176,12 +175,8 @@ h4 {
 }
 a {
   font-size: 1.4rem;
-  color: #FFFFFF;
+  color: #293D3D;
   text-decoration: none;
-}
-img {
-  max-width: 100%;
-  height: auto;
 }
 .nav-container {
   background: #033F4C;
@@ -194,7 +189,8 @@ img {
   width: 95%;
   margin: 0 auto;
 }
-.nav-container header h2 {
+.nav-container header h2,
+.nav-container header a {
   color: #FFFFFF;
 }
 .nav-container header .left-nav {
@@ -208,7 +204,35 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 90%;
+  width: 70%;
+}
+.foot-container {
+  width: 100%;
+}
+.foot-container footer {
+  display: flex;
+  background: rgba(196, 196, 196, 0.36);
+  padding: 4% 5%;
+}
+.foot-container footer .footCol1 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.foot-container footer .footCol2 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.foot-container footer .footCol3 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.foot-container footer .footCol4 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
 }
 .about-container {
   margin: 0 auto;
@@ -248,39 +272,38 @@ img {
 .about-container .reverse-person .pContent-right {
   width: 30%;
 }
-.main-content {
+.home-page-content {
   background-image: url(../img/mountain-bg.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
+  height: 100%;
+  width: 100%;
 }
-.main-content .main-container {
+.home-page-content .main-container {
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
 }
-.main-content .main-container .top-box {
+.home-page-content .main-container .top-box {
   background: #5CA2A9;
   border-radius: 10px;
   margin-top: 5%;
   padding: 4% 0 4% 5%;
 }
-.main-content .main-container .top-box h2 {
+.home-page-content .main-container .top-box h2 {
   margin: 3% 0;
   color: white;
 }
-.main-content .main-container .top-box h3 {
+.home-page-content .main-container .top-box h3 {
   margin: 2% 0;
   color: white;
 }
-.main-content .main-container .top-box p {
+.home-page-content .main-container .top-box p {
   color: white;
 }
-.main-content .main-container .bottom-box {
+.home-page-content .main-container .bottom-box {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -288,51 +311,90 @@ img {
   background: #FFFFFF;
   border-radius: 10px;
 }
-.main-content .main-container .bottom-box .left-middle-box {
-  margin: 1% 2%;
-  width: 30%;
+.home-page-content .main-container .bottom-box .left-middle-box {
+  width: 35%;
+  padding: 0 3%;
 }
-.main-content .main-container .bottom-box .left-middle-box .inner-icon {
+@media (max-width: 1000px) {
+  .home-page-content .main-container .bottom-box .left-middle-box {
+    width: 45%;
+  }
+}
+.home-page-content .main-container .bottom-box .left-middle-box button {
+  width: 100%;
+  background: #F5CA8A;
+  margin-bottom: 15%;
+  padding: 4% 0;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.home-page-content .main-container .bottom-box .left-middle-box .inner-icon {
   margin: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-content .main-container .bottom-box .left-middle-box .inner-icon a {
-  color: #293D3D;
-}
-.main-content .main-container .bottom-box .left-middle-box .first-icon {
+.home-page-content .main-container .bottom-box .left-middle-box .first-icon {
   margin-top: 10%;
 }
-.main-content .main-container .bottom-box .right-middle-box {
-  margin: 0 2%;
-  width: 70%;
+.home-page-content .main-container .bottom-box .right-middle-box {
+  width: 65%;
 }
-.main-content .main-container .bottom-box .right-middle-box img {
-  width: 70px;
-  height: 70px;
+@media (max-width: 1000px) {
+  .home-page-content .main-container .bottom-box .right-middle-box {
+    width: 55%;
+  }
+}
+.home-page-content .main-container .bottom-box .right-middle-box img {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
-.main-content .main-container .bottom-box .right-middle-box h2 {
-  padding: 5% 0 5% 10%;
+.home-page-content .main-container .bottom-box .right-middle-box h3 {
+  padding: 10% 0 0 10%;
+  font-weight: 600;
 }
-.main-content .main-container .bottom-box .right-middle-box .whos_going {
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going {
   display: flex;
   width: 70%;
   justify-content: space-between;
   align-items: center;
-  padding: 8%;
-  margin: 0 auto;
+  padding: 10% 0 0 15%;
 }
-.main-content .main-container .bottom-box .right-middle-box .whos_going .p1,
-.main-content .main-container .bottom-box .right-middle-box .whos_going .p2,
-.main-content .main-container .bottom-box .right-middle-box .whos_going .p3 {
+@media (max-width: 1000px) {
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going {
+    flex-direction: column;
+  }
+}
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going .p1,
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going .p2,
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going .p3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main-content .main-container .bottom-box .right-middle-box .whos_going p {
+@media (max-width: 1000px) {
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p1,
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p2,
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p3 {
+    margin: 20px 0;
+  }
+}
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going .p1 p,
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going .p2 p,
+.home-page-content .main-container .bottom-box .right-middle-box .whos_going .p3 p {
   color: #293D3D;
   margin-top: 20px;
+}
+@media (max-width: 1000px) {
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p1 p,
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p2 p,
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p3 p {
+    margin: 0;
+  }
 }
