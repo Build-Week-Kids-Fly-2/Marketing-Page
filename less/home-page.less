@@ -1,0 +1,104 @@
+// Home Page Styles
+
+.main-content{
+  background-image: url(../img/mountain-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+
+  .main-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .top-box{
+      background: @header-bg;
+      border-radius: 10px;
+      margin-top: 5%;
+      padding: 4% 0 4% 5%;
+      
+      h2{
+        margin: 3% 0;
+        color: white;
+      }
+      h3{
+        margin: 2% 0;
+        color: white;
+      }
+      p{
+        color: white;
+      }
+    }//end of top box
+
+    .bottom-box{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: 10px;
+
+      .left-middle-box{
+        margin: 1% 2%;
+        width: 30%;
+
+        .inner-icon{
+          margin: 10%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          a{
+            color: @text-color
+          }
+        }
+        .first-icon{
+          margin-top: 10%;
+        } 
+        
+      }//end of left-middle-box
+
+      .right-middle-box{
+        margin: 0 2%;
+        width: 70%;
+        
+        img{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+        h2{
+          padding: 5% 0 5% 10%;
+        }
+
+        .whos_going{
+          display: flex;
+          width: 70%;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8%;
+          margin: 0 auto;
+
+          .p1, .p2, .p3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          p{
+            color: @outerspace;
+            margin-top: 20px;
+          }
+        }
+      }//end of right-middle-box
+
+    }//end of bottom box
+    
+  }//end of main container
+}//end of main content
+
+

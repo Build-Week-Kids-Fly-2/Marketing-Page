@@ -1,0 +1,338 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  border: 3px solid black;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  color: #293D3D;
+}
+p {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.6rem;
+}
+a {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.nav-container {
+  background: #033F4C;
+  width: 100%;
+}
+.nav-container header {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 5px 0;
+  width: 95%;
+  margin: 0 auto;
+}
+.nav-container header h2 {
+  color: #FFFFFF;
+}
+.nav-container header .left-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-left: 3%;
+}
+.nav-container header .right-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+}
+.about-container {
+  margin: 0 auto;
+  width: 80%;
+}
+.about-container img {
+  height: auto;
+  width: auto;
+  border-radius: 30%;
+}
+.about-container a,
+.about-container h2,
+.about-container h3,
+.about-container h4 {
+  color: #293D3D;
+}
+.about-container .normal-person {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4% 0;
+  background: rgba(196, 196, 196);
+  border-radius: 10px;
+}
+.about-container .normal-person .pContent-left {
+  width: 30%;
+}
+.about-container .reverse-person {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4% 0;
+  background: rgba(196, 196, 196, 0.36);
+  border-radius: 10px;
+}
+.about-container .reverse-person .pContent-right {
+  width: 30%;
+}
+.main-content {
+  background-image: url(../img/mountain-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+.main-content .main-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-content .main-container .top-box {
+  background: #5CA2A9;
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 4% 0 4% 5%;
+}
+.main-content .main-container .top-box h2 {
+  margin: 3% 0;
+  color: white;
+}
+.main-content .main-container .top-box h3 {
+  margin: 2% 0;
+  color: white;
+}
+.main-content .main-container .top-box p {
+  color: white;
+}
+.main-content .main-container .bottom-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.main-content .main-container .bottom-box .left-middle-box {
+  margin: 1% 2%;
+  width: 30%;
+}
+.main-content .main-container .bottom-box .left-middle-box .inner-icon {
+  margin: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content .main-container .bottom-box .left-middle-box .inner-icon a {
+  color: #293D3D;
+}
+.main-content .main-container .bottom-box .left-middle-box .first-icon {
+  margin-top: 10%;
+}
+.main-content .main-container .bottom-box .right-middle-box {
+  margin: 0 2%;
+  width: 70%;
+}
+.main-content .main-container .bottom-box .right-middle-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.main-content .main-container .bottom-box .right-middle-box h2 {
+  padding: 5% 0 5% 10%;
+}
+.main-content .main-container .bottom-box .right-middle-box .whos_going {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8%;
+  margin: 0 auto;
+}
+.main-content .main-container .bottom-box .right-middle-box .whos_going .p1,
+.main-content .main-container .bottom-box .right-middle-box .whos_going .p2,
+.main-content .main-container .bottom-box .right-middle-box .whos_going .p3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .main-container .bottom-box .right-middle-box .whos_going p {
+  color: #293D3D;
+  margin-top: 20px;
+}
