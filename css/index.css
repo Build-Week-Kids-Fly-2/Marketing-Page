@@ -230,7 +230,7 @@ img {
   justify-content: space-around;
   align-items: center;
   margin: 4% 0;
-  background: rgba(196, 196, 196);
+  background: #c4c4c4;
   border-radius: 10px;
 }
 .about-container .normal-person .pContent-left {
@@ -242,20 +242,11 @@ img {
   justify-content: space-around;
   align-items: center;
   margin: 4% 0;
-  background: rgba(196, 196, 196, 0.36);
+  background: #c4c4c45c;
   border-radius: 10px;
 }
 .about-container .reverse-person .pContent-right {
   width: 30%;
-}
-.main-content {
-  background-image: url(../img/mountain-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
 }
 .main-content .main-container {
   width: 80%;
@@ -335,4 +326,34 @@ img {
 .main-content .main-container .bottom-box .right-middle-box .whos_going p {
   color: #293D3D;
   margin-top: 20px;
+}
+.landing-page {
+  background-image: url(/img/landing-page-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.landing-page .main-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 1300px;
+}
+.landing-page .text {
+  background-color: #ffffff;
+  width: 341px;
+}
+.landing-page button {
+  background-color: #F9DFB9;
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+.landing-page .icons {
+  background-color: #ffffff;
+  height: 120px;
+  font-size: 4rem;
 }
