@@ -1,20 +1,38 @@
 //Landing Page Styles
 .landing-page{
+  .nav-container{
+    margin-bottom: 5%;
+  }
+  .main-content{
   background-image: url(/img/landing-page-bg.png);
+  background-color: @mystic;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-size: auto;
+  // height: 100vh;
+  // width: 100vw;
+  .flex;
+  // position: absolute;
+  }
 
   .main-content{
+    
     .justAlign(center, center);
     width: 1300px;
+    // margin-top: 5%;
     // padding: 5%;
   }
   .text{
+    .justAlign(center, center);
     background-color: @white;
     width:341px;
+    padding: 2% 2%;
+
+    #find{
+      border-bottom: 1px solid black;
+      margin: 0 10%;
+      color: rgba(0, 0, 0, 0.5);
+    }
   }
   button{
     background-color: @btn-bg-color;
@@ -22,10 +40,20 @@
     height: 60px;
     border-radius: 10px;
     border: none;
+    margin: 10% 5%
   }
   .icons{
+    .flex;
+    .justAlign(center, center);
     background-color: @white;
     height: 120px;
-    font-size: 4rem;
+    font-size: 3rem;
+    width: 950px;
+
+    .icon-text{
+      .justAlign(center, center);
+      text-align: center;
+      padding: 2%;
+    }
   }
 }

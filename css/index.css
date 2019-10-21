@@ -1,3 +1,6 @@
+.flex {
+  display: flex;
+}
 html,
 body,
 div,
@@ -327,23 +330,33 @@ img {
   color: #293D3D;
   margin-top: 20px;
 }
-.landing-page {
-  background-image: url(/img/landing-page-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+.landing-page .nav-container {
+  margin-bottom: 5%;
 }
 .landing-page .main-content {
+  background-image: url(/img/landing-page-bg.png);
+  background-color: #E0EAEB;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   display: flex;
+}
+.landing-page .main-content {
   justify-content: center;
   align-content: center;
   width: 1300px;
 }
 .landing-page .text {
+  justify-content: center;
+  align-content: center;
   background-color: #ffffff;
   width: 341px;
+  padding: 2% 2%;
+}
+.landing-page .text #find {
+  border-bottom: 1px solid black;
+  margin: 0 10%;
+  color: rgba(0, 0, 0, 0.5);
 }
 .landing-page button {
   background-color: #F9DFB9;
@@ -351,9 +364,20 @@ img {
   height: 60px;
   border-radius: 10px;
   border: none;
+  margin: 10% 5%;
 }
 .landing-page .icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-color: #ffffff;
   height: 120px;
-  font-size: 4rem;
+  font-size: 3rem;
+  width: 950px;
+}
+.landing-page .icons .icon-text {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 2%;
 }
