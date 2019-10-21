@@ -1,19 +1,17 @@
 // Home Page Styles
-
-.main-content{
-  // background-image: url(../img/mountain-bg.jpg);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // height: 100vh;
-  // width: 100vw;
-  // position: absolute;
+.home-page-content{
+  background-image: url(../img/mountain-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 
   .main-container{
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
 
     .top-box{
       background: @header-bg;
@@ -43,18 +41,30 @@
       border-radius: 10px;
 
       .left-middle-box{
-        margin: 1% 2%;
-        width: 30%;
+        width: 35%;
+        padding: 0 3%;
 
+        @media @desktop{
+          width: 45%;
+        }
+
+        button{
+          width: 100%;
+          background: @button-color;
+          margin-bottom: 15%;
+          padding: 4% 0;
+          text-align: center;
+          border: none;
+          border-radius: 10px;
+          font-size: 1.8rem;
+          font-weight: 600;
+          cursor: pointer;
+        }
         .inner-icon{
           margin: 10%;
           display: flex;
           justify-content: space-between;
           align-items: center;
-
-          a{
-            color: @text-color
-          }
         }
         .first-icon{
           margin-top: 10%;
@@ -63,16 +73,20 @@
       }//end of left-middle-box
 
       .right-middle-box{
-        margin: 0 2%;
-        width: 70%;
+        width: 65%;
+
+         @media @desktop{
+          width: 55%;
+        }
         
         img{
-          width: 70px;
-          height: 70px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
         }
-        h2{
-          padding: 5% 0 5% 10%;
+        h3{
+          padding: 10% 0 0 10%;
+          font-weight: 600;
         }
 
         .whos_going{
@@ -80,20 +94,31 @@
           width: 70%;
           justify-content: space-between;
           align-items: center;
-          padding: 8%;
-          margin: 0 auto;
+          padding: 10% 0 0 15%;
+
+          @media @desktop{
+            flex-direction: column;
+          }
 
           .p1, .p2, .p3{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @media @desktop{
+              margin: 20px 0;
+            }
+            p{
+              color: @text-color;
+              margin-top: 20px;
+
+              @media @desktop{
+                margin: 0;
+              }
+            }
           }
-          p{
-            color: @outerspace;
-            margin-top: 20px;
-          }
-        }
+        }//end of whos going
       }//end of right-middle-box
 
     }//end of bottom box
