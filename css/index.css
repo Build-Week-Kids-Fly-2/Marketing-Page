@@ -364,8 +364,15 @@ a {
   border-radius: 50%;
 }
 .home-page-content .main-container .bottom-box .right-middle-box h3 {
+  text-align: center;
   padding: 10% 0 0 10%;
   font-weight: 600;
+}
+@media (max-width: 850px) {
+  .home-page-content .main-container .bottom-box .right-middle-box h3 {
+    padding: 0;
+    text-align: center;
+  }
 }
 .home-page-content .main-container .bottom-box .right-middle-box .whos_going {
   display: flex;
@@ -407,39 +414,48 @@ a {
     margin: 0;
   }
 }
+.landing-page {
+  margin: 0 2.5%;
+}
 .landing-page .main-content {
   display: flex;
   padding-top: 4%;
-  width: 100%;
   background-image: url(/img/landing-page-bg.png);
   background-color: #E0EAEB;
-  background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .landing-page .main-content .text {
-  width: 40%;
+  width: 30%;
   margin-left: 2%;
   display: flex;
   justify-content: flex-end;
   align-content: center;
-}
-.landing-page .main-content .text #create {
-  padding-left: 5%;
+  flex-direction: column;
   background-color: #ffffff;
 }
-.landing-page .main-content .text #find {
-  border-bottom: 1px solid black;
-  margin: 0 10%;
-  color: rgba(0, 0, 0, 0.5);
+.landing-page .main-content .text #create {
+  padding: 10% 25% 0 10%;
+  line-height: 4rem;
 }
-.landing-page .main-content button {
+.landing-page .main-content .text #create h2 {
+  padding-bottom: 2rem;
+}
+.landing-page .main-content .text #create p {
+  line-height: 2rem;
+}
+.landing-page .main-content .text #create #find {
+  border-bottom: 1px solid black;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 20%;
+}
+.landing-page .main-content .text button {
   background-color: #F9DFB9;
-  width: 280px;
+  width: 250px;
   height: 60px;
   border-radius: 10px;
   border: none;
-  margin: 10% 5%;
+  margin: 25% 5%;
 }
 .landing-page .main-content .icons {
   display: flex;
