@@ -2,33 +2,23 @@
 
 .foot-container{
   width: 100%;
+  background: @footer-bg;
 
   footer{
-  display:flex;
-  background: @footer-bg;
-  padding: 4% 5%;
+    width: 60%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    padding: 3% 0;
 
-    .footCol1{
+    .footCol{
       width: 20%;
       display: flex;
       flex-direction: column;
+      a{
+        padding: 5% 0;
+      }
     }
-    .footCol2{
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-    }
-    .footCol3{
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-    }
-    .footCol4{
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-    }
-
   }//End of Footer
 
 }//End of Foot Container

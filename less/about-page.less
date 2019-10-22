@@ -1,17 +1,22 @@
 // About Page Styles
 
+.about-page{
+  background: @silver;
+}
 .about-container{
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
 
   img{
-    height: auto;
-    width: auto;
+    height: 200px;
+    width: 200px;
     border-radius: 30%;
+    padding: 3% 0;
   }
 
-  a, h2, h3, h4{
-    color: @text-color;
+  h1{
+    text-align: center;
+    padding-top: 5%;
   }
 
   .normal-person{
@@ -22,10 +27,22 @@
     background: @silver100;
     border-radius: 10px;
 
+    #last{
+      margin-bottom: 0;
+    }
+
     .pContent-left{
       width: 30%;
     }
-  }
+    .pContent-right{
+      width: 30%;
+  
+      p{
+        padding: 5% 0;
+      }
+    }
+  }//end of normal person
+
   .reverse-person{
     display: flex;
     flex-direction: row-reverse;
@@ -35,11 +52,19 @@
     background: @silver;
     border-radius: 10px;
 
-    .pContent-right{
+    .pContent-left{
       width: 30%;
     }
-  }
+    .pContent-right{
+      width: 30%;
   
-  
+      p{
+        padding: 5% 0;
+      }
+    }
+  }//end of reverse person
+
 }//end of about container
+
+
 
