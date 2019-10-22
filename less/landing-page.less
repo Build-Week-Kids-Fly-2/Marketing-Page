@@ -1,42 +1,49 @@
 //Landing Page Styles
 .landing-page{
+  margin: 0 2.5%;
 
   .main-content{
     .flex();
     padding-top:4%;
-    width: 100%;
-    
     background-image: url(/img/landing-page-bg.png);
-    // background-size: 1440px 1024px;
     background-color: @mystic;
-    background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
 
     .text{
-      width: 40%;
+      width: 30%;
       margin-left: 2%;
       .flex();
       .justAlign(flex-end, center);
-      
+      flex-direction: column;
+      background-color: @white;
+
       #create{
-        padding-left: 5%;
-        background-color: @white;
-      }
+        padding: 10% 25% 0 10%;
+        line-height: 4rem;
+
+        h2{
+          padding-bottom: 2rem;
+        }
+
+        p{
+          line-height: 2rem;
+        }
       
-      #find{
-        border-bottom: 1px solid black;
-        margin: 0 10%;
-        color: rgba(0, 0, 0, 0.5);
+        #find{
+          border-bottom: 1px solid black;
+          color: rgba(0, 0, 0, 0.5);
+          padding-top: 20%; 
+        }
       }
-    }
-    button{
-      background-color: @btn-bg-color;
-      width: 280px;
-      height: 60px;
-      border-radius: 10px;
-      border: none;
-      margin: 10% 5%
+      button{
+        background-color: @btn-bg-color;
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        margin: 25% 5%
+      }
     }
 
     .icons{
