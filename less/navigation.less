@@ -3,31 +3,38 @@
 .nav-container{
   background: @nav-bg;
   width: 100%;
+  padding-bottom: 1%;
 
   header{
-    display: flex;
-    align-items: center;
+    .flex();
+    .justAlign(center, center);
     padding: 24px 0 5px 0;
     width: 95%;
     margin: 0 auto;
 
     h2, a{
-      color: #FFFFFF;
+      color: @white;
+    }
+
+    nav{
+      align-items: flex-end;
     }
 
     .left-nav{
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-evenly;
       width: 30%;
-      margin-left: 3%;
+      // margin-left: 3%;
     }//end of left nav
 
     .right-nav{
       display: flex;
       justify-content: flex-end;
-      align-items: center;
       width: 70%;
+
+      a{
+        margin-right: 5%;
+      }
     }//end of right nav
 
   }//end of header
