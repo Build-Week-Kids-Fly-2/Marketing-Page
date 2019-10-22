@@ -169,6 +169,7 @@ p {
 }
 h2 {
   font-size: 3.6rem;
+  font-weight: bold;
 }
 h3 {
   font-size: 3rem;
@@ -184,37 +185,42 @@ a {
 .nav-container {
   background: #033F4C;
   width: 100%;
+  padding-bottom: 1%;
 }
 .nav-container header {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
   padding: 24px 0 5px 0;
   width: 95%;
   margin: 0 auto;
 }
 .nav-container header h2,
 .nav-container header a {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.nav-container header nav {
+  align-items: flex-end;
 }
 .nav-container header .left-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   width: 30%;
-  margin-left: 3%;
 }
 .nav-container header .right-nav {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   width: 70%;
+}
+.nav-container header .right-nav a {
+  margin-right: 5%;
 }
 .foot-container {
   width: 100%;
 }
 .foot-container footer {
   display: flex;
-  background: rgba(196, 196, 196, 0.36);
+  background: #c4c4c45c;
   padding: 4% 5%;
 }
 .foot-container footer .footCol1 {
@@ -394,35 +400,40 @@ a {
   color: #293D3D;
   margin-top: 20px;
 }
-.landing-page .nav-container {
-  margin-bottom: 5%;
+@media (max-width: 1000px) {
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p1 p,
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p2 p,
+  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p3 p {
+    margin: 0;
+  }
 }
 .landing-page .main-content {
+  display: flex;
+  padding-top: 4%;
+  width: 100%;
   background-image: url(/img/landing-page-bg.png);
   background-color: #E0EAEB;
+  background-position: absolute;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
+  background-size: cover;
+}
+.landing-page .main-content .text {
+  width: 40%;
+  margin-left: 2%;
   display: flex;
-}
-.landing-page .main-content {
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
-  width: 1300px;
 }
-.landing-page .text {
-  justify-content: center;
-  align-content: center;
+.landing-page .main-content .text #create {
+  padding-left: 5%;
   background-color: #ffffff;
-  width: 341px;
-  padding: 2% 2%;
 }
-.landing-page .text #find {
+.landing-page .main-content .text #find {
   border-bottom: 1px solid black;
   margin: 0 10%;
   color: rgba(0, 0, 0, 0.5);
 }
-.landing-page button {
+.landing-page .main-content button {
   background-color: #F9DFB9;
   width: 280px;
   height: 60px;
@@ -430,26 +441,22 @@ a {
   border: none;
   margin: 10% 5%;
 }
-.landing-page .icons {
+.landing-page .main-content .icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
+  width: 100%;
+  margin-right: 7%;
+  padding-right: 5%;
+  padding-top: 1%;
   background-color: #ffffff;
   height: 120px;
-  font-size: 3rem;
-  width: 950px;
+  font-size: 2.5rem;
+  line-height: 4rem;
 }
-.landing-page .icons .icon-text {
+.landing-page .main-content .icons .icon-text {
   justify-content: center;
   align-content: center;
   text-align: center;
   padding: 2%;
-
-@media (max-width: 1000px) {
-  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p1 p,
-  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p2 p,
-  .home-page-content .main-container .bottom-box .right-middle-box .whos_going .p3 p {
-    margin: 0;
-  }
-
 }
