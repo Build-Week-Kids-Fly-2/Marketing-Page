@@ -169,6 +169,7 @@ p {
 }
 h2 {
   font-size: 3.6rem;
+  font-weight: bold;
 }
 h3 {
   font-size: 3rem;
@@ -184,24 +185,27 @@ a {
 .nav-container {
   background: #033F4C;
   width: 100%;
+  padding-bottom: 1%;
 }
 .nav-container header {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
   padding: 24px 0 5px 0;
   width: 95%;
   margin: 0 auto;
 }
 .nav-container header h2,
 .nav-container header a {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.nav-container header nav {
+  align-items: flex-end;
 }
 .nav-container header .left-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   width: 30%;
-  margin-left: 3%;
 }
 @media (max-width: 850px) {
   .nav-container header .left-nav {
@@ -211,8 +215,10 @@ a {
 .nav-container header .right-nav {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   width: 70%;
+}
+.nav-container header .right-nav a {
+  margin-right: 5%;
 }
 .foot-container {
   width: 100%;
@@ -501,7 +507,63 @@ a {
   font-size: 3rem;
   width: 950px;
 }
-.landing-page .icons .icon-text {
+.landing-page {
+  margin: 0 2.5%;
+}
+.landing-page .main-content {
+  display: flex;
+  padding-top: 4%;
+  background-image: url(/img/landing-page-bg.png);
+  background-color: #E0EAEB;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing-page .main-content .text {
+  width: 30%;
+  margin-left: 2%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.landing-page .main-content .text #create {
+  padding: 10% 25% 0 10%;
+  line-height: 4rem;
+}
+.landing-page .main-content .text #create h2 {
+  padding-bottom: 2rem;
+}
+.landing-page .main-content .text #create p {
+  line-height: 2rem;
+}
+.landing-page .main-content .text #create #find {
+  border-bottom: 1px solid black;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 20%;
+}
+.landing-page .main-content .text button {
+  background-color: #F9DFB9;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  margin: 25% 5%;
+}
+.landing-page .main-content .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+  margin-right: 7%;
+  padding-right: 5%;
+  padding-top: 1%;
+  background-color: #ffffff;
+  height: 120px;
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+.landing-page .main-content .icons .icon-text {
   justify-content: center;
   align-content: center;
   text-align: center;
