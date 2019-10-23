@@ -2,69 +2,88 @@
 
 .about-page{
   background: @silver;
+
+  .about-container{
+    margin: 0 auto;
+    width: 60%;
+
+    img{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      padding: 3% 0;
+      max-width: 100%;
+
+       @media @mobile{
+        height: 150px;
+        width: 150px;
+      }
+    }
+
+    h1{
+      text-align: center;
+      padding-top: 5%;
+    }
+    h3{
+       @media @tablet{
+        font-size: 2.6rem;
+      }
+      @media @mobile{
+        font-size: 2rem;
+      }
+    }
+
+    @media @tablet{
+      width: 75%;
+    }
+
+    .normal-person{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 4% 0;
+      background: @silver100;
+      border-radius: 10px;
+
+      #last{
+        margin-bottom: 0;
+      }
+
+      .pContent-left{
+        width: 30%;
+      }
+      .pContent-right{
+        width: 30%;
+    
+        p{
+          padding: 5% 0;
+        }
+      }
+    }//end of normal person
+
+    .reverse-person{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      margin: 4% 0;
+      background: @silver;
+      border-radius: 10px;
+
+      .pContent-left{
+        width: 30%;
+      }
+      .pContent-right{
+        width: 30%;
+    
+        p{
+          padding: 5% 0;
+        }
+      }
+    }//end of reverse person
+
+  }//end of about container
 }
-.about-container{
-  margin: 0 auto;
-  width: 50%;
-
-  img{
-    height: 200px;
-    width: 200px;
-    border-radius: 30%;
-    padding: 3% 0;
-  }
-
-  h1{
-    text-align: center;
-    padding-top: 5%;
-  }
-
-  .normal-person{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 4% 0;
-    background: @silver100;
-    border-radius: 10px;
-
-    #last{
-      margin-bottom: 0;
-    }
-
-    .pContent-left{
-      width: 30%;
-    }
-    .pContent-right{
-      width: 30%;
-  
-      p{
-        padding: 5% 0;
-      }
-    }
-  }//end of normal person
-
-  .reverse-person{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    margin: 4% 0;
-    background: @silver;
-    border-radius: 10px;
-
-    .pContent-left{
-      width: 30%;
-    }
-    .pContent-right{
-      width: 30%;
-  
-      p{
-        padding: 5% 0;
-      }
-    }
-  }//end of reverse person
-
-}//end of about container
 
 
 
