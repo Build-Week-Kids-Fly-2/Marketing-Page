@@ -216,6 +216,11 @@ a {
     width: 50%;
   }
 }
+@media (max-width: 550px) {
+  .nav-container header .left-nav {
+    width: 75%;
+  }
+}
 .nav-container header .right-nav {
   display: flex;
   justify-content: flex-end;
@@ -235,6 +240,11 @@ a {
   margin-left: 10%;
   padding: 3% 0;
 }
+@media (max-width: 850px) {
+  .foot-container footer {
+    width: 80%;
+  }
+}
 .foot-container footer .footCol {
   width: 20%;
   display: flex;
@@ -243,24 +253,56 @@ a {
 .foot-container footer .footCol a {
   padding: 5% 0;
 }
+@media (max-width: 850px) {
+  .foot-container footer .footCol a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 550px) {
+  .foot-container footer .footCol a {
+    font-size: 1rem;
+  }
+}
 .about-page {
   background: #c4c4c45c;
 }
-.about-container {
+.about-page .about-container {
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 }
-.about-container img {
+.about-page .about-container img {
   height: 200px;
   width: 200px;
-  border-radius: 30%;
+  border-radius: 50%;
   padding: 3% 0;
+  max-width: 100%;
 }
-.about-container h1 {
+@media (max-width: 550px) {
+  .about-page .about-container img {
+    height: 150px;
+    width: 150px;
+  }
+}
+.about-page .about-container h1 {
   text-align: center;
   padding-top: 5%;
 }
-.about-container .normal-person {
+@media (max-width: 850px) {
+  .about-page .about-container h3 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 550px) {
+  .about-page .about-container h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 850px) {
+  .about-page .about-container {
+    width: 75%;
+  }
+}
+.about-page .about-container .normal-person {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -268,19 +310,19 @@ a {
   background: #c4c4c4;
   border-radius: 10px;
 }
-.about-container .normal-person #last {
+.about-page .about-container .normal-person #last {
   margin-bottom: 0;
 }
-.about-container .normal-person .pContent-left {
+.about-page .about-container .normal-person .pContent-left {
   width: 30%;
 }
-.about-container .normal-person .pContent-right {
+.about-page .about-container .normal-person .pContent-right {
   width: 30%;
 }
-.about-container .normal-person .pContent-right p {
+.about-page .about-container .normal-person .pContent-right p {
   padding: 5% 0;
 }
-.about-container .reverse-person {
+.about-page .about-container .reverse-person {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -289,13 +331,13 @@ a {
   background: #c4c4c45c;
   border-radius: 10px;
 }
-.about-container .reverse-person .pContent-left {
+.about-page .about-container .reverse-person .pContent-left {
   width: 30%;
 }
-.about-container .reverse-person .pContent-right {
+.about-page .about-container .reverse-person .pContent-right {
   width: 30%;
 }
-.about-container .reverse-person .pContent-right p {
+.about-page .about-container .reverse-person .pContent-right p {
   padding: 5% 0;
 }
 .home-page-content {
@@ -477,7 +519,7 @@ a {
 .landing-page .main-content {
   display: flex;
   padding-top: 4%;
-  background-image: url(/img/landing-page-bg.png);
+  background-image: url(../img/landing-page-bg.png);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -520,6 +562,11 @@ a {
     line-height: 3rem;
   }
 }
+@media (max-width: 550px) {
+  .landing-page .main-content .text #create {
+    line-height: 2rem;
+  }
+}
 .landing-page .main-content .text #create h2 {
   padding-bottom: 2rem;
 }
@@ -538,12 +585,23 @@ a {
     font-size: 2.1rem;
   }
 }
+@media (max-width: 550px) {
+  .landing-page .main-content .text #create h2 {
+    font-size: 1.6rem;
+  }
+}
 .landing-page .main-content .text #create p {
   line-height: 2rem;
 }
 @media (max-width: 850px) {
   .landing-page .main-content .text #create p {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 550px) {
+  .landing-page .main-content .text #create p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 .landing-page .main-content .text #create #find {
@@ -558,6 +616,11 @@ a {
   border-radius: 10px;
   border: none;
   margin: 25% 5%;
+}
+@media (max-width: 550px) {
+  .landing-page .main-content .text button {
+    height: 40px;
+  }
 }
 .landing-page .main-content .icons {
   display: flex;
