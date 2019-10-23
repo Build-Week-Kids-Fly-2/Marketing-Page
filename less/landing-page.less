@@ -3,9 +3,7 @@
   .main-content{
     .flex();
     padding-top:4%;
-    background-image: url(/img/landing-page-bg.png);
-    // background-color: @mystic;
-    // background-repeat: no-repeat;
+    background-image: url(../img/landing-page-bg.png);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -43,6 +41,10 @@
           line-height: 3rem;
         }
 
+        @media @mobile{
+          line-height: 2rem;
+        }
+
         h2{
           padding-bottom: 2rem;
           
@@ -56,6 +58,10 @@
           @media @tabletS{
             font-size: 2.1rem;
           }
+
+          @media @mobile{
+            font-size: 1.6rem;
+          }
         }
 
         p{
@@ -63,6 +69,11 @@
 
           @media @tablet{
             font-size: 1.4rem;
+          }
+
+          @media @mobile{
+            font-size: 1.2rem;
+            line-height: 1.5rem;
           }
         }
       
@@ -72,17 +83,18 @@
           padding-top: 20%; 
         }
       }
+
       button{
         background-color: @btn-bg-color;
         width: auto;
         height: 60px;
         border-radius: 10px;
         border: none;
-        margin: 25% 5%
+        margin: 25% 5%;
 
-        // @media @desktop{
-
-        // }
+        @media @mobile{
+          height: 40px;
+        }
       }
     }
 
@@ -154,3 +166,4 @@
       }
     }
   }
+}

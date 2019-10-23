@@ -14,29 +14,60 @@
 
     h2, a{
       color: @white;
+      @media @tabletS{
+        font-size: 1.3rem;
+      }
     }
 
+    h2{
+      @media @tabletS{
+        font-size: 2.5rem;
+      }
+    }
     nav{
       align-items: flex-end;
     }
 
     .left-nav{
       display: flex;
-      justify-content: space-evenly;
-      width: 30%;
+      justify-content: flex-start;
+      width: 55%;
 
-      @media @tablet{
-        width: 50%;
+      @media @desktop{
+        width: 60%;
+      }
+
+      @media @mobile{
+        margin-right: 2%;
+      }
+
+      a{
+        margin-right: 5%;
+        margin-left: 5%;
+
+        @media @tabletS{
+          margin-right: 2%;
+        }
+
+        
       }
     }//end of left nav
 
     .right-nav{
       display: flex;
       justify-content: flex-end;
-      width: 70%;
+      width: 30%;
+
+      @media @tablet{
+        width: 40%;
+      }
 
       a{
         margin-right: 5%;
+
+        @media @tabletS{
+          margin-right: 3%;
+        }
       }
     }//end of right nav
 
