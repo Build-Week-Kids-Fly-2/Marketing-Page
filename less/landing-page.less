@@ -1,286 +1,165 @@
 //Landing Page Styles
 .landing-page{
- .main-content{
-   .flex();
-   padding-top:4%;
-   background-image: url(../img/landing-page-bg.png);
-   background-size: cover;
-   height: 100%;
-   width: 100%;
-   padding-bottom: 5%;
-   .text{
-     width: 30%;
-     margin-left: 2%;
-     .flex();
-     .justAlign(flex-end, center);
-     flex-direction: column;
-     background-color: @white;
-     @media @desktop{
-       width: 25%;
-     }
-     @media @tablet{
-       line-height: 3rem;
-       justify-content: flex-start;
-       padding-top: 2%;
-     }
-     #create{
-       width: 100%;
-       padding: 10% 25% 0 10%;
-       line-height: 4rem;
-       @media @desktop{
-         padding-right: 18%;
-       }
-       @media @tablet{
-         padding-right: 12%;
-         line-height: 3rem;
-       }
-       @media @mobile{
-         line-height: 2rem;
-       }
-       h2{
-         padding-bottom: 2rem;
-         @media @desktop{
-           font-size: 3rem;
-         }
-         @media @tablet{
-           font-size: 2.6rem;
-         }
-         @media @tabletS{
-           font-size: 2.1rem;
-         }
-         @media @mobile{
-           font-size: 1.6rem;
-         }
-       }
-       p{
-         line-height: 2rem;
-         @media @tablet{
-           font-size: 1.4rem;
-         }
-         @media @mobile{
-           font-size: 1.2rem;
-           line-height: 1.5rem;
-         }
-       }
-       #find{
-         border-bottom: 1px solid black;
-         color: rgba(0, 0, 0, 0.5);
-         padding-top: 20%;
-       }
-     }
-     button{
-       background-color: @btn-bg-color;
-       width: auto;
-       height: 60px;
-       border-radius: 10px;
-       border: none;
-       margin: 25% 5%;
-       @media @mobile{
-         height: 40px;
-       }
-     }
-   }
-   .icons{
-     .flex;
-     .justAlign(flex-end, center);
-     width: 60%;
-     margin-right: 7%;
-     // padding-right:3%;
-     padding-top: 1%;
-     background-color: @white;
-     height: 120px;
-     @media @desktopL{
-       height: 90px;
-     }
-     @media @desktop{
-       .justAlign(center, flex-start);
-       width: 65%;
-     }
-     @media @tablet{
-       height: 65px;
-     }
-     .icon-text{
-       .flex;
-       flex-direction: column;
-       .justAlign(center, center);
-       text-align: center;
-       padding: 1%;
-       flex-wrap: nowrap;
-       font-size: 2.8rem;
-       line-height: 3.8rem;
-       width: 100%;
-       @media @desktopL{
-         font-size: 2rem;
-       }
-       @media @desktop{
-         padding-top: 3%;
-       }
-       @media @tablet{
-         padding-top: 0;
-       }
-       p{
-         flex-wrap: nowrap;
-         width: 100%;
-         font-size: 1.4rem;
-         @media @desktopL{
-           font-size: 1.4rem;
-           line-height: 2rem;
-         }
-         @media @desktop{
-           font-size: 1.2rem;
-           margin: 0 2%;
-         }
-         @media @tablet{
-           display: none;
-         }
-       }
-     }
-   }
- }
-}
-
-
-
-<<<<<<< HEAD
-      #create{
-        width: 100%;
-        padding: 10% 25% 0 10%;
-        line-height: 4rem;
-
-        @media @desktop{
-          padding-right: 18%;
-        }
-
-        @media @tablet{
-          padding-right: 12%;
-          line-height: 3rem;
-        }
-
-        @media @mobile{
-          line-height: 2rem;
-        }
-
-        h2{
-          padding-bottom: 2rem;
-          
-          @media @desktop{
-            font-size: 3rem;
-          }
-          @media @tablet{
-            font-size: 2.6rem;
-          }
-
-          @media @tabletS{
-            font-size: 2.1rem;
-          }
-
-          @media @mobile{
-            font-size: 1.6rem;
-          }
-        }
-
-        p{
-          line-height: 2rem;
-
-          @media @tablet{
-            font-size: 1.4rem;
-          }
-
-          @media @mobile{
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-          }
-        }
-      
-        #find{
-          border-bottom: 1px solid black;
-          color: rgba(0, 0, 0, 0.5);
-          padding-top: 20%; 
-        }
-      }
-
-      button{
-        background-color: @btn-bg-color;
-        width: auto;
-        height: 60px;
-        border-radius: 10px;
-        border: none;
-        margin: 25% 5%;
-
-        @media @mobile{
-          height: 40px;
-        }
-      }
+.main-content{
+  .flex();
+  padding-top:4%;
+  background-image: url(../img/landing-page-bg.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5%;
+  .text{
+    width: 30%;
+    margin-left: 2%;
+    .flex();
+    .justAlign(flex-end, center);
+    flex-direction: column;
+    background-color: @white;
+    @media @desktop{
+      width: 25%;
     }
+    @media @tablet{
+      line-height: 3rem;
+      justify-content: flex-start;
+      padding-top: 2%;
+    }
+    #create{
+      width: 100%;
+      padding: 10% 25% 0 10%;
+      line-height: 4rem;
 
-    .icons{
-      .flex;
-      .justAlign(flex-end, center);
-      width: 60%;
-      margin-right: 7%;
-      // padding-right:3%;
-      padding-top: 1%;
-      background-color: @white;
-      height: 120px;
-      
-      @media @desktopL{
-        height: 90px;
-      }
-      
       @media @desktop{
-        .justAlign(center, flex-start);
-        width: 65%;
+        padding-right: 18%;
       }
 
       @media @tablet{
-        height: 65px;
+        padding-right: 12%;
+        line-height: 3rem;
       }
 
-      .icon-text{
-        .flex;
-        flex-direction: column;
-        .justAlign(center, center);
-        text-align: center;
-        padding: 1%;
-        flex-wrap: nowrap;
-        font-size: 2.8rem;
-        line-height: 3.8rem;
-        width: 100%;
+      @media @mobile{
+        line-height: 2rem;
+      }
 
-        @media @desktopL{
-          font-size: 2rem;
-        }
+      h2{
+        padding-bottom: 2rem;
         
         @media @desktop{
-          padding-top: 3%;
+          font-size: 3rem;
+        }
+        @media @tablet{
+          font-size: 2.6rem;
+        }
+
+        @media @tabletS{
+          font-size: 2.1rem;
+        }
+
+        @media @mobile{
+          font-size: 1.6rem;
+        }
+      }
+
+      p{
+        line-height: 2rem;
+
+        @media @tablet{
+          font-size: 1.4rem;
+        }
+
+        @media @mobile{
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+        }
+      }
+    
+      #find{
+        border-bottom: 1px solid black;
+        color: rgba(0, 0, 0, 0.5);
+        padding-top: 20%; 
+      }
+    }
+
+    button{
+      background-color: @btn-bg-color;
+      width: auto;
+      height: 60px;
+      border-radius: 10px;
+      border: none;
+      margin: 25% 5%;
+
+      @media @mobile{
+        height: 40px;
+      }
+    }
+  }
+
+  .icons{
+    .flex;
+    .justAlign(flex-end, center);
+    width: 60%;
+    margin-right: 7%;
+    // padding-right:3%;
+    padding-top: 1%;
+    background-color: @white;
+    height: 120px;
+    
+    @media @desktopL{
+      height: 90px;
+    }
+    
+    @media @desktop{
+      .justAlign(center, flex-start);
+      width: 65%;
+    }
+
+    @media @tablet{
+      height: 65px;
+    }
+
+    .icon-text{
+      .flex;
+      flex-direction: column;
+      .justAlign(center, center);
+      text-align: center;
+      padding: 1%;
+      flex-wrap: nowrap;
+      font-size: 2.8rem;
+      line-height: 3.8rem;
+      width: 100%;
+
+      @media @desktopL{
+        font-size: 2rem;
+      }
+      
+      @media @desktop{
+        padding-top: 3%;
+      }
+
+      @media @tablet{
+        padding-top: 0;
+      }
+
+      p{
+        flex-wrap: nowrap;
+        width: 100%;
+        font-size: 1.4rem;
+        
+        @media @desktopL{
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+
+        @media @desktop{
+          font-size: 1.2rem;
+          margin: 0 2%;
         }
 
         @media @tablet{
-          padding-top: 0;
-        }
-
-        p{
-          flex-wrap: nowrap;
-          width: 100%;
-          font-size: 1.4rem;
-          
-          @media @desktopL{
-            font-size: 1.4rem;
-            line-height: 2rem;
-          }
-
-          @media @desktop{
-            font-size: 1.2rem;
-            margin: 0 2%;
-          }
-
-          @media @tablet{
-            display: none;
-          }
+          display: none;
         }
       }
     }
   }
 }
-=======
->>>>>>> 33548f0895a108c3babad14f89497a2868013690
+}
