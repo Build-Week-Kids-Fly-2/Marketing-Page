@@ -469,6 +469,7 @@ a {
   background-size: cover;
   height: 100%;
   width: 100%;
+  padding-bottom: 5%;
 }
 .landing-page .main-content .text {
   width: 30%;
