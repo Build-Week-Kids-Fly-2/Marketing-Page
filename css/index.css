@@ -167,6 +167,10 @@ body {
 p {
   font-size: 1.6rem;
 }
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
 h2 {
   font-size: 3.6rem;
   font-weight: bold;
@@ -222,46 +226,39 @@ a {
 }
 .foot-container {
   width: 100%;
+  background: #c4c4c45c;
 }
 .foot-container footer {
+  width: 60%;
   display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  padding: 3% 0;
+}
+.foot-container footer .footCol {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.foot-container footer .footCol a {
+  padding: 5% 0;
+}
+.about-page {
   background: #c4c4c45c;
-  padding: 4% 5%;
-}
-.foot-container footer .footCol1 {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-}
-.foot-container footer .footCol2 {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-}
-.foot-container footer .footCol3 {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-}
-.foot-container footer .footCol4 {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
 }
 .about-container {
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
 }
 .about-container img {
-  height: auto;
-  width: auto;
+  height: 200px;
+  width: 200px;
   border-radius: 30%;
+  padding: 3% 0;
 }
-.about-container a,
-.about-container h2,
-.about-container h3,
-.about-container h4 {
-  color: #293D3D;
+.about-container h1 {
+  text-align: center;
+  padding-top: 5%;
 }
 .about-container .normal-person {
   display: flex;
@@ -271,8 +268,17 @@ a {
   background: #c4c4c4;
   border-radius: 10px;
 }
+.about-container .normal-person #last {
+  margin-bottom: 0;
+}
 .about-container .normal-person .pContent-left {
   width: 30%;
+}
+.about-container .normal-person .pContent-right {
+  width: 30%;
+}
+.about-container .normal-person .pContent-right p {
+  padding: 5% 0;
 }
 .about-container .reverse-person {
   display: flex;
@@ -283,8 +289,14 @@ a {
   background: #c4c4c45c;
   border-radius: 10px;
 }
+.about-container .reverse-person .pContent-left {
+  width: 30%;
+}
 .about-container .reverse-person .pContent-right {
   width: 30%;
+}
+.about-container .reverse-person .pContent-right p {
+  padding: 5% 0;
 }
 .home-page-content {
   background-image: url(../img/mountain-bg.jpg);
